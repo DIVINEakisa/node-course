@@ -8,7 +8,7 @@ app.get("/about", (req, res) => {
   res.sendFile("./views/about.html", { root: __dirname });
 });
 app.get("/about-us", (req, res) => {
-  res.sendFile("./views/about.html", { root: __dirname });
+  res.redirect("/about");
 });
 app.use((req, res) => {
   res.sendFile("./views/404.html", { root: __dirname });
